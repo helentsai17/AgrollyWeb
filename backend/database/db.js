@@ -1,7 +1,9 @@
 const Sequelize = require('sequelize')
 const db = {}
+const MySQLPassword = process.env.MySQL_PASSWORD
 
-const sequelize = new Sequelize('agrolly-shop', 'root', '', {
+const sequelize = new Sequelize('agrolly-shop', 'root', MySQLPassword, {
+  
   host: 'localhost',
   dialect: 'mysql',
   operatorsAliases: false,

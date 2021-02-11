@@ -5,6 +5,8 @@ const mysql = require('mysql');
 var app = express()
 var port = process.env.PORT || 5000
 
+require('dotenv').config();
+
 app.use(bodyParser.json())
 app.use(cors())
 app.use(
